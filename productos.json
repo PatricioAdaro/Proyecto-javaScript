@@ -1,0 +1,147 @@
+ [
+    
+    {   
+        "categoria":"Electricas",
+        "id":"Les Paul",
+        "tipo": "electrica",
+       "imagen": "./img/electrica epiphone les paul.jpg",
+        "marca": "Gibson",
+       "modelo": "Les Paul",
+        "precio": 300000 
+    },
+    {  
+        "categoria":"Electricas",
+        "id":"Stratocaster",
+        "tipo": "electrica",
+       "imagen":"./img/electrica fender strato.jpg",
+        "marca": "Fender", 
+       "modelo": "Stratocaster",
+        "precio": 290000 
+    },
+    {   
+        "categoria":"Electricas",
+        "id":"RG550",
+        "tipo": "electrica",
+       "imagen": "./img/electrica ibanez.jpg", 
+        "marca": "Ibanez", 
+       "modelo": "RG550",
+        "precio": 180000 
+    },
+    {   
+        "categoria":"Electricas",
+        "id":"Custom 24",
+        "tipo": "electrica",
+       "imagen": "./img/electrica prs.jpg", 
+        "marca": "PRS", 
+       "modelo": "Custom 24",
+        "precio": 220000
+     },
+    {   
+        "categoria":"Criollas",
+        "id": "3C",
+        "tipo": "criolla",
+       "imagen": "./img/criolla.jpeg", 
+        "marca": "Alhambra", 
+       "modelo": "3C",
+        "precio": 80000
+    },
+    {   
+        "categoria":"Criollas",
+        "id":"C7",
+        "tipo": "criolla",
+       "imagen": "./img/criolla.jpeg", 
+        "marca": "Córdoba", 
+       "modelo": "C7",
+        "precio": 75000
+     },
+    {   
+        "categoria":"Criollas",
+        "id":"CG122MS",
+        "tipo": "criolla",
+       "imagen": "./img/criolla.jpeg", 
+        "marca": "Yamaha", 
+       "modelo": "CG122MS",
+        "precio": 93000 
+    },
+    {   
+        "categoria":"Criollas",
+        "id": "Caballero 8",
+        "tipo": "criolla",
+       "imagen": "./img/criolla.jpeg", 
+        "marca": "Manuel Rodríguez", 
+       "modelo": "Caballero 8",
+        "precio": 84000 
+    },
+    {   
+        "categoria":"Electroacusticas",
+        "id": "214ce",
+        "tipo": "electroAcustica",
+       "imagen": "./img/electroacustica.jpeg",
+        "marca": "Taylor", 
+       "modelo": "214ce",
+        "precio": 225000 
+    },
+    {   
+        "categoria":"Electroacusticas",
+        "id": "GPC-13E",
+        "tipo": "electroAcustica",
+       "imagen": "./img/electroacustica.jpeg", 
+        "marca": "Martin", 
+       "modelo": "GPC-13E",
+        "precio": 130000 
+    },
+    {   
+        "categoria":"Electroacusticas",
+        "id":"J-200 EC",
+        "tipo": "electroAcustica",
+       "imagen": "./img/electroacustica.jpeg", 
+        "marca": "Gibson",
+       "modelo": "J-200 EC",
+        "precio": 240000 
+    },
+    {   
+        "categoria":"Electroacusticas",
+        "id":"CD-60SCE",
+        "tipo": "electroAcustica",
+       "imagen": "./img/electroacustica.jpeg", 
+        "marca": "Fender", 
+       "modelo": "CD-60SCE",
+        "precio": 235000 
+    },
+    {   
+        "categoria":"Acusticas",
+        "id":"D-28",
+        "tipo": "acustica",
+       "imagen": "./img/acustica.webp",
+        "marca": "Martin",
+       "modelo": "D-28",
+        "precio": 110000 
+    },
+    {   
+        "categoria":"Acusticas",
+        "id":"314ce",
+        "tipo": "acustica",
+       "imagen": "./img/acustica.webp",
+        "marca": "Taylor",
+       "modelo": "314ce",
+        "precio": 150000 
+    },
+    {   
+        "categoria":"Acusticas",
+        "id":"J-45",
+        "tipo": "acustica", 
+       "imagen": "./img/acustica.webp",
+        "marca": "Gibson", 
+       "modelo": "J-45",
+        "precio": 180000 
+    },
+    {   
+        "categoria":"Acusticas",
+        "id": "D-240E",
+        "tipo": "acustica",
+       "imagen": "./img/acustica.webp", 
+        "marca": "Guild", 
+       "modelo": "D-240E",
+        "precio": 100000 
+    }
+]
