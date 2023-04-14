@@ -3,23 +3,26 @@ gtrEnCarrito = JSON.parse(gtrEnCarrito);
 
 
 let contCarritoVacio = document.querySelector("#carrito-vacio");
-const contCarritoProductos = document.querySelector("#carrito-productos");
+let contCarritoProductos = document.querySelector("#carrito-productos");
 let botonesEliminar = document.querySelectorAll(".carrito-producto-eliminar");
 let contComprar = document.querySelector("#contenedor-comprar");
-const contTotal = document.querySelector("#total");
+let contTotal = document.querySelector("#total");
+let btnComprarAhora = document.querySelector("#boton-comprar-ahora");
+let contCompraRealizada = document.querySelector("#compra-relizada");
 
 
 
 function cargarProductosAlCarrito(){
-    if (gtrEnCarrito){
+    if (gtrEnCarrito && gtrEnCarrito.length > 0){
 
-       contCarritoVacio.classList.add("oculto");
-       contComprar.classList.remove("oculto");
+        contCarritoVacio.classList.add("oculto");
+        contComprar.classList.remove("oculto");
         
         
         contCarritoProductos.innerHTML = "";
-    
+         
         gtrEnCarrito.forEach(gtr=> {
+        
             const div = document.createElement("div");
             div.classList.add("carrito-producto");
             div.innerHTML = `
@@ -40,22 +43,24 @@ function cargarProductosAlCarrito(){
                         <small>Subtotal</small>
                         <p>$${gtr.precio * gtr.cantidad}</p>
                     </div>
-                    <button class="carrito-producto-eliminar" id="${gtr.id}"><img src="./img/trash-bin-icon-vector-illustration.jpg"height="20px" alt="img"></button>
+                    <button class="carrito-producto-eliminar" id="${gtr.id}"><img src="./img/trash-bin-icon-vector-illustration.jpg"height="35px" alt="img"></button>
                 `;
                 contCarritoProductos.append(div);
-            })
-    }else{
+                  
+            });
+    } else{
             
             contCarritoVacio.classList.remove("oculto");
-            contComprar.classList.remove("oculto");
+            contComprar.classList.add("oculto");
+            contCarritoProductos.classList.add("oculto");
              
     }
-    actualizarBotonesEliminar();    
+    actualizarBotonesEliminar(); 
+       
 }
-
 cargarProductosAlCarrito();
-actualizarTotal()
 
+actualizarTotal()
 
 
 function actualizarBotonesEliminar(){
@@ -79,6 +84,20 @@ function eliminarDelCarrito(evt){
 function actualizarTotal(){
     const totalAPagar = gtrEnCarrito.reduce((acc, guitarra) => acc + (guitarra.precio * guitarra.cantidad), 0);
     console.log(totalAPagar);
-    total.innerText = `$${totalAPagar}`;
+    total.innerText = `$ ${totalAPagar}`;
+}
+
+btnComprarAhora.addEventListener("click", comprarAhora);
+
+function comprarAhora(){        
+        
+    gtrEnCarrito.length = 0;
+    localStorage.setItem("guitarrasEnCarrito", JSON.stringify(gtrEnCarrito));
+    
+    contCarritoVacio.classList.add("oculto");
+    contCarritoProductos.classList.add("oculto"); 
+    contComprar.classList.add("oculto");
+    contCompraRealizada.classList.remove("oculto");
+
 }
 

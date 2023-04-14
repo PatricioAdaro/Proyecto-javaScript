@@ -5,7 +5,8 @@
 }
 body{
     width: 100%;
-    height: 100vh; 
+    height: 100vh;
+    font-family: 'Secular One', sans-serif;
 }
 
 .container{
@@ -34,17 +35,20 @@ ul{
     list-style-type: none;
     display: flex;
     flex-direction: row;
+    
 }
 
 .btn-menu{
     padding: 10px;
+    
     width: 150px;
     background-color: hsl(0, 0%, 0%) ;
     color: white;
     border: 1px solid rgb(92, 92, 92);
+    cursor: pointer;
 }
 a{
-    margin-left: 30px;
+    margin-left: 50px;
 }
 h2{
     text-align: center;
@@ -78,9 +82,7 @@ h2{
 }
 .card-foto{
     height:400px;
-    
-     width: 100%; 
-
+    width: 100%; 
 }
 .detalle{
     display: flex;
@@ -90,9 +92,12 @@ h2{
     
 }
 .card-comprar{ 
+    font-family: 'Secular One', sans-serif;
+    color: antiquewhite;
     padding: 10px;
     width: 250px; 
-    background-color: hsl(0, 0%, 100%);
+    background-color: hsl(214, 100%, 42%);
+    cursor: pointer;
 }
 footer{
     grid-area: footer;
@@ -106,7 +111,7 @@ footer{
     color: white;
 }
 
-/* ------------------------------------------ */
+/* ------------------------------------------- */
 
 .btn-menu-carrito{
     color: white;
@@ -114,11 +119,26 @@ footer{
     text-decoration: none;
     padding: 10px;
 }
+.carrito-vacio{
+    text-align: center;
+    margin-top: 100px;
+    font-size: 2rem;
+    color: rgb(175, 5, 5);
+}
+.emoji{
+    background-color: yellow;
+    border-radius: 100%;
+}
 .carrito-productos{
     display: flex;
     flex-direction: column;
     gap: 20px;
-   
+}
+.compra-realizada{
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(30, 211, 7);
+    margin-top: 150px;
 }
 .carrito-producto{
     display: flex;
@@ -128,6 +148,11 @@ footer{
     padding: 0px 15px;
     border:1px solid black;
     margin-top: 10px;
+}
+.carrito-producto-eliminar{
+   margin-right: 20px;
+   border: none;
+   cursor: pointer;
 }
 .contenedor-comprar{
     margin: 30px 0px;
@@ -142,15 +167,18 @@ footer{
     width: 300px;
 }
 .boton-comprar{
+    font-family: 'Secular One', sans-serif;
     margin-left: 30px;
     padding: 15px;
     background-color: black;
     color: white;
+    cursor: pointer;
+    text-transform:uppercase;
 }
 
 .oculto{
     display: none;
- }
+}
 
 
 

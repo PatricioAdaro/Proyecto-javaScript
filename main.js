@@ -45,8 +45,8 @@ btnCategoria.forEach(boton => {
             const botonCategoria = guitarras.filter(guitarra => guitarra.tipo === boton.id);
             cargarGuitarras(botonCategoria);
         }else{
-            cargarGuitarras(guitarras);
-            tituloCategorias.innerHTML = "Todas las guitarras"; 
+            tituloCategorias.innerHTML = "Todas las guitarras";
+            cargarGuitarras(guitarras); 
         }
         
 
@@ -62,7 +62,7 @@ function actualizarBotonesComprar(){
 
 let gtrEnCarrito ;
 
-const gtrEnCarritoLocalStorage = localStorage.getItem("guitarrasEnCarrito");
+let gtrEnCarritoLocalStorage = localStorage.getItem("guitarrasEnCarrito");
 
 if(gtrEnCarritoLocalStorage){
     gtrEnCarrito = JSON.parse(gtrEnCarritoLocalStorage);

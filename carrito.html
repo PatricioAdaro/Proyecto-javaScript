@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&family=Secular+One&display=swap" rel="stylesheet">
+    <title>proyecto-JS</title>
 </head>
 <body>
     
@@ -27,40 +30,20 @@
         <main>
 
             <h2 id="titulo-carrito">Carrito</h2>
-            <p id="carrito-vacio">El carrito esta vacio <img src="./img/pngwing.com.png" height="20px"  alt="imagen"></p>
-            
+            <p id="carrito-vacio" class="carrito-vacio">El carrito esta vacio <img class="emoji" src="./img/pngwing.com.png" height="25px"  alt="imagen"></p>
+            <p id="compra-relizada" class="compra-realizada oculto">¡ FELICIDADES <br> TU COMPRA SE REALIZO CON EXITO !</p>
 
             <div id="carrito-productos"></div>
-                <!-- <div id="carrito-producto" class="carrito-producto">
-                    <img src="./img/electrica epiphone les paul.jpg" width="100px" alt="imagen">
-                    <div class="carrito-producto-titulo">
-                        <small>Titulo</small>
-                        <h3>Gibson Les Paul</h3>
-                    </div>
-                    <div class="carrito-producto-cantidad">
-                        <small>Cantidad</small>
-                        <p>1</p>
-                    </div>
-                    <div class="carrito-producto-precio">
-                        <small>Precio</small>
-                        <p>$ 300000</p>
-                    </div>
-                    <div class="carrito-producto-subtotal">
-                        <small>Subtotal</small>
-                        <p id=>$ 300000</p>
-                    </div>
-                    <button class="carrito-producto-eliminar"><img src="./img/trash-bin-icon-vector-illustration.jpg"height="20px" alt="img"></button>
-
-                </div>  -->
+                
                 
 
-            </div>
-             <div id="contenedor-comprar" class="contenedor-comprar  oculto">
+            
+            <div id="contenedor-comprar" class="contenedor-comprar">
 
                 <div id="comprar" class="comprar">
                     <p >Total:</p>
                     <p id="total"></p>
-                    <button class="boton-comprar">Comprar ahora</button>
+                    <button id="boton-comprar-ahora" class="boton-comprar">Comprar ahora</button>
                 </div>
             </div>
           
